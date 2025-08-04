@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An enhanced HTML5 page showcasing lists, tables, media, and a form with built-in validation.">
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Advanced Elements and Form</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Features List</h2>
+      <ul>
+        <li>Semantic HTML5 tags</li>
+        <li>Multimedia integration</li>
+        <li>Form with validation</li>
+        <li>Accessible structure</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Course Schedule Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>9:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Forms & Validation</td>
+            <td>11:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Multimedia Content</h2>
+      <figure>
+        <img src="./slide.jpg" alt="Image" width="300" />
+        <figcaption>A sample image using semantic HTML5.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="./Christina-Shusho-Wa-Kuabudiwa.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="./videoplayback.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required placeholder="example@domain.com" /><br /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="number" id="age" name="age" min="10" max="100" required /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required pattern=".{6,}" placeholder="At least 6 characters" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="course">Course:</label><br />
+          <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="html">HTML Basics</option>
+            <option value="forms">Forms & Validation</option>
+          </select><br /><br />
+
+          <label>
+            <input type="checkbox" name="newsletter" /> Subscribe to newsletter
+          </label><br /><br />
+
+          <label for="comments">Additional Comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your message..."></textarea><br /><br />
+        </fieldset>
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Practice. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
